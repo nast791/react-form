@@ -33,6 +33,7 @@ const Form = props => {
       return acc;
     }, {});
     console.log(data);
+    setReset(!reset);
   };
 
   return (
