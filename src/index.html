@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <!-- Build at: <%= htmlWebpackPlugin.options.buildTime %>  -->
-  <!-- <base href="/"> -->
+  <base>
+  <script>
+    const base = document.querySelector('base');
+    base.href = (location.hostname === 'localhost') ? '/' : '/react-form/';
+    console.log(location.hostname)
+  </script>
   <title>Form</title>
 </head>
 <body>
