@@ -36,7 +36,7 @@ module.exports = {
   },
   entry: './src/app.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'docs'),
     filename: '[name]-[hash:4].js'
   },
   optimization: optimization(),
